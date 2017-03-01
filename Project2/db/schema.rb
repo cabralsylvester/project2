@@ -16,15 +16,22 @@ ActiveRecord::Schema.define(version: 20170227143647) do
   enable_extension "plpgsql"
 
   create_table "biometrics", force: :cascade do |t|
-    t.integer "glucose"
-    t.integer "bmi"
-    t.integer "vitamin_d"
+    t.string   "name"
+    t.string   "measurement_type"
+    t.integer  "value"
+    t.string   "description"
+    t.integer  "user_id"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+    t.index ["user_id"], name: "index_biometrics_on_user_id", using: :btree
   end
 
   create_table "users", force: :cascade do |t|
-    t.string  "name"
-    t.integer "height"
-    t.integer "weight"
+    t.string   "name"
+    t.integer  "height"
+    t.integer  "weight"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

@@ -1,0 +1,16 @@
+<h1>Edit Users</h1>
+
+<%= form_for @user do |w| %>
+  <%= w.label :name %>
+  <%= w.text_field :name %>
+
+  <%= w.label :height %>
+  <%= w.text_field :height %>
+
+  <%= w.label :weight %>
+  <%= w.text_field :weight %>
+
+  <%= w.submit %>
+
+<% end %>
+<br>

@@ -1,0 +1,15 @@
+<h1>Edit Biometrics</h1>
+
+<%= form_for @biometrics do |w| %>
+  <%= w.label :name %>
+  <%= w.text_field :name %>
+
+  <%= w.label :measurement_type %>
+  <%= w.text_field :measurement_type %>
+
+  <%= w.submit %>
+
+<% end %>
+<br>
+
+<%=  link_to "Delete!", @biometrics, method: :delete, class: "delete" %>

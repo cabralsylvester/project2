@@ -9,4 +9,17 @@
 User.destroy_all
 Biometric.destroy_all
 
-Steph = User.create(name: "", img_url:"", house: gryffindor)
+# glucose = Biometric.create(user1: "Steph", user2: "Klay", user3: "KD")
+# bmi = Biometric.create(user1: "Steph", user2: "Klay", user3: "KD")
+# vitamin_d = Biometric.create(user1: "Steph", user2: "Klay", user3: "KD")
+
+
+john = User.create(name: "John", height: "80", weight: "230")
+steph = User.create(name: "Steph", height: "75", weight: "190")
+klay = User.create(name: "Klay", height: "78", weight: "250")
+kd = User.create(name: "Kevin Durant", height: "84", weight: "260")
+
+Biometric.create(name: "glucose", measurement_type: "mg/dl", value: 100, description: "blood sugar", user: john)
+Biometric.create(name: "glucose", measurement_type: "mg/dl", value: 100, description: "blood sugar", user: steph)
+Biometric.create(name: "glucose", measurement_type: "mg/dl", value: 100, description: "blood sugar", user: klay)
+Biometric.create(name: "glucose", measurement_type: "mg/dl", value: 100, description: "blood sugar", user: kd)

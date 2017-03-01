@@ -1,0 +1,2 @@
+module BiometricsControllerHelper
+end
