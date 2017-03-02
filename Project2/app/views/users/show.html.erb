@@ -3,11 +3,13 @@
 <h2>Height: <%= @user.height %></h2>
 <h2>Weight: <%= @user.weight %></h2>
 
-<% @biometrics.each do |biometric| %>
+<%# @biometrics.each do |biometric| %>
 <div class="biometric">
-  <h3><%= biometric.name %></h3>
-  <p>Value: <%= biometric.value %> <%= biometric.measurement_type %></p>
-<p>Created on: <%= biometric.created_at.strftime("%b %d. %Y") %> | Updated on: <%= biometric.updated_at %></p>
+  <h3><%= @biometrics.name %></h3>
+  <p>Value: <%= @biometrics.value %> <%= @biometrics.measurement_type %></p>
+<p>Created on: <%= @biometrics.created_at.strftime("%b %d. %Y") %> | Updated on: <%= @biometrics.updated_at %></p>
 </div>
+
 <%=  link_to "Delete!", user_path(@user), method: :delete, class: "delete" %>
-<% end %>
+
+ <!-- EDIT****link point to edit_user_biometric_path -->

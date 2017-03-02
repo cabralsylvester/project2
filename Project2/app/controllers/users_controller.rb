@@ -6,7 +6,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    @biometrics = @user.biometrics
+    @biometrics = Biometric.find(params[:id])
   end
 
   def new
@@ -14,9 +14,10 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new
-    @user = User.all.sample #Can delete if add user is not working
-    @user.save
+    @user = User.create!(user_params)
+    # @user = User.new
+    # @user = User.all.sample #Can delete if add user is not working
+    # @user.save
     redirect_to users_path(@user)
   end
 

@@ -16,7 +16,36 @@
 
 body {
   text-align: center;
-  background: green;
+  background: url("http://bit.ly/2mLwgXj") no-repeat fixed;
+  background-size: cover;
   font-family: Verdana;
-  font-size: 200%;
+  font-size: 300%;
+}
+
+h1 {
+  font-size: 150%;
+  font-family: monospace;
+}
+
+
+
+h4 {
+  font-size: 30px;
+  font-family: monospace;
+}
+
+p {
+  font-family: monospace;
+  font-weight:
+  font-size:: 18px;
+}
+
+ol {
+font-family: monospace;
+color: rgb(97, 65, 244);
+}
+
+h2 {
+  font-family: monospace;
+  font-size: 40;
 }

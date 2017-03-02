@@ -1,15 +1,19 @@
 <h1>New Users</h1>
 
-<%= form_for @user do |w| %>
-  <%= w.label :name %>
-  <%= w.text_field :name %>
+<%= form_for @user do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
 
-  <%= w.label :height %>
-  <%= w.text_field :height %>
+  <%= f.label :height %>
+  <%= f.text_field :height %>
 
-  <%= w.label :weight %>
-  <%= w.text_field :weight %>
+  <%= f.label :weight %>
+  <%= f.text_field :weight %>
 
-  <%= w.submit %>
+   <%#= w.label :glucose %>
+   <%#= w.text_field :glucose %>
+
+
+  <%= f.submit %>
 
 <% end %>
