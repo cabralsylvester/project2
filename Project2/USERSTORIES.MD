@@ -1,0 +1,3 @@
+This EHR logger is intended to be a feature on a larger application.  EHR (Electronic Health Records) are very important moving forward. The issue is that EHR's (as they currently stand) are for the most part clinical, stand alone applications.  By including EHRs into a larger application, logging electric health records can become a much more natural user experience. This feature (EHR) logger will provide users with this experience.
+
+I set up 2 models.  Users and Biometrics... My initial plan was to use 3 metrics, but as the project progressed, I realized that that my plan was not as striaghtforward as I initially thought... That said I was able to achieve full CRUD functionality. 

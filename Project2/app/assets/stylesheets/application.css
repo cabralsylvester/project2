@@ -23,7 +23,7 @@ body {
 }
 
 h1 {
-  font-size: 150%;
+  font-size: 200%;
   font-family: monospace;
 }
 
@@ -36,8 +36,7 @@ h4 {
 
 p {
   font-family: monospace;
-  font-weight:
-  font-size:: 18px;
+  font-size: 50px;
 }
 
 ol {
@@ -47,5 +46,6 @@ color: rgb(97, 65, 244);
 
 h2 {
   font-family: monospace;
-  font-size: 40;
+  font-size: 30;
+
 }
